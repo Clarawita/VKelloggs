@@ -1,0 +1,169 @@
+html { 
+  background: url('../image/Product.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8vh 0;
+  gap: 12vh;
+}
+
+.pro-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.pro-head h1{
+  font-size: 3.2rem;
+}
+
+.pro-head h5{
+  font-size: 1rem;
+}
+
+.pro-section{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.pro-section h1{
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  color: #92070F;
+}
+
+.pro-section h5{
+  font-size: 1rem;
+}
+
+.pro-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8vh;
+}
+
+.pro-row h1{
+  width: 17vw;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.brand{
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  align-items: center;
+  margin-bottom: 10vh;
+  /* justify-content: space-between; */
+}
+
+.brand h1{
+  font-size: 3.3rem;
+  font-style: italic;
+  color: #92070F;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .pro-head h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .pro-head h5 {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .pro-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .pro-section h5 {
+    font-size: 0.9rem;
+  }
+
+  .pro-row {
+    flex-direction: column;
+    gap: 3vh;
+    padding-bottom: 5vh;
+  }
+
+  .pro-row h1 {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .pro-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pro-item img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 2.5rem;
+    padding: 0 10px;
+  }
+
+  .navbar span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .navbar button {
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+  }
+
+  .footer span {
+    font-size: 0.9rem;
+  }
+
+  #footer-left {
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+  }
+}

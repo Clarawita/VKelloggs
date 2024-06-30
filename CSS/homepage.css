@@ -1,0 +1,280 @@
+html { 
+  background: url('../image/Homepage.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 0;
+  /* height: 100vh; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10vw;
+}
+
+#upper-t{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5vw;
+}
+
+#upper-t span{
+  font-size: 4rem;
+  color: #EB3E3E;
+}
+
+#bottom-t{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1vw;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10vw;
+}
+
+#about-head{
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+#about-bottom{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.about button{
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: dm sans;
+  color: #FFF4F4;
+  background-color: #92070F;
+  transition: all 0.15s;
+}
+
+.about button:hover{
+  background-color: #FFF4F4;
+  border: #92070F solid 2px;
+  color: #92070F;
+}
+
+.about button:active{
+  opacity: 0.7;
+  background-color: #e5dada;
+}
+
+.product, .bestseller{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 85%;
+  margin: 0 auto;
+  gap: 2.8vw;
+  margin-bottom: 15vw;
+}
+
+#product-head, #best-head{
+  display: flex;
+  justify-content: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  /* align-items: center; */
+  /* letter-spacing: 0.2vw; */
+}
+
+.a-product{
+  display: flex;
+  justify-content: end;
+}
+
+.product-bot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.a-product a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.best-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  align-items: center;
+}
+
+.best-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+.best-img p{
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.best-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.best-rec{
+  background-color: #F5F5F5;
+  padding: 1.5vw 2.5vw;
+  /* width: 20vw; */
+  border-radius: 20px;
+  border: #bababa solid 1px;
+}
+
+.rec-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5vw;
+  padding-top: 0.5vw;
+}
+
+.rec-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rec-serve{
+  font-size: 1.2rem;
+}
+
+.rec-desc p{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .content img{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #upper-t {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #upper-t span {
+    font-size: 3rem;
+  }
+
+  #bottom-t {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about {
+    width: 90%;
+    margin-bottom: 8vw;
+  }
+
+  #about-head {
+    font-size: 2rem;
+  }
+
+  #about-bottom {
+    font-size: 1rem;
+  }
+
+  .about button {
+    padding: 2vw 4vw;
+    font-size: 0.9rem;
+  }
+
+  .product, .bestseller {
+    width: 95%;
+    margin-bottom: 12vw;
+  }
+
+  #product-head, #best-head {
+    font-size: 2rem;
+  }
+
+  .a-product {
+    justify-content: center;
+  }
+
+  .product-bot, .best-content {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .a-product a {
+    font-size: 1.2rem;
+  }
+
+  .best-img p {
+    font-size: 1.2rem;
+  }
+
+  .best-rec {
+    padding: 2vw 4vw;
+  }
+
+  .rec-title {
+    font-size: 1.2rem;
+  }
+
+  .rec-serve {
+    font-size: 1rem;
+  }
+
+  .rec-desc p {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    padding: 2vh 1vw;
+  }
+
+  .footer span {
+    font-size: 0.9rem;
+  }
+
+  #footer-left {
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+  }
+}
